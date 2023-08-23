@@ -19,7 +19,7 @@ int numColors = 5;
 
 EMSCRIPTEN_KEEPALIVE
 double* interpolateColor(double x, double y, double t) {
-    y = y/4;
+    y = y/10;
     double* finalColorArray = (double*)malloc(3 * sizeof(double));
     if (!finalColorArray) {
         // Handle memory allocation failure
