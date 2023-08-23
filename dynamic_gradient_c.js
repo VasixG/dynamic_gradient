@@ -2,12 +2,12 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 // Define the size of each grid cell.
-const cellSize = 10;
+const cellSize = 6;
 const rows = canvas.height / cellSize;
 const cols = canvas.width / cellSize;
-canvas.style.webkitFilter = "blur(5px)";
+canvas.style.webkitFilter = "blur(10px)";
 let alignx =  canvas.width / 2;
-let aligny =  canvas.width;
+let aligny =  canvas.width / 2;
 
 Module.onRuntimeInitialized = function() {
     function draw(t){
